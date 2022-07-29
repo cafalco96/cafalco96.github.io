@@ -1,5 +1,98 @@
-h1 {
-  color: goldenrod;
-  background: linear-gradient(red, black);
-  text-align: center;
-}/*# sourceMappingURL=styles.css.map */
+*{margin:auto;
+    background-color:#1D5690;
+    }
+    #navbar{display:flex;
+    width:100%;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    }
+    #navbar ul{display: flex;
+        justify-content: space-evenly;
+      flex-wrap: wrap;
+        align-items: center;
+        padding-inline-start: 0;
+        margin-block: 0;
+        height: 100%;}
+      li > a {
+      color: inherit;
+      text-decoration: none;
+      
+    }
+    #navbar > ul > li {
+      color: white;
+      margin: 0 0.2rem;
+        padding: 0.2rem;
+        display: block;
+      font-size:20px;
+    }
+    header{background-color:#B92844;}
+    #welcome-section{background-color:#373849;}
+    #welcome-section h1{color:white;
+    text-align:center;
+    font-weight:bold;
+    font-size:40px;}
+    #welcome-section p{text-align:center;color:#C8213D;
+    font-size:20px;}
+    nav > ul > li:hover {
+      background-color: #dfdfe2;
+      color: #1b1b32;
+      cursor: pointer;}
+    h2{color:white;
+    font-size:25px;
+    text-align:center;
+    text-decoration: underline;}
+    #projects{display:grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    gap:auto;}
+    
+    .grid{width:300px;
+    margin-top:10px;
+    position:fix;
+    aspect-ratio:1/1;  
+      object-fit:cover;
+    }
+    #profile-link #white {
+        display: block;
+        margin: 40px auto;
+        padding: 15px;
+        font-size: 23px;
+      border:3px solid black;
+    }
+    footer{text-align:center;color:white;}
+    .social-icons i{color:black;
+    font-size:2rem;}
+     #profile-link #white:hover {
+      cursor: pointer;
+      border: 3px solid white;
+      background-color:white;
+        padding:15px;
+       border-radius:20%;
+    }
+      .center{display:flex;
+      justify-content:center;}
+    .center a{text-decoration:none;
+    color:white;}
+    .center a:hover{text-decoration:underline;
+    font-size:20px;}
+    @media only screen and (min-width: 768px) {
+      #projects {
+        grid-template-columns: 1fr 1fr;
+      .social-icons {
+        font-size: 4rem;
+      }
+      }
+      @media only screen and (min-width: 950px) {
+      #projects {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+        .social-icons {
+        font-size: 25px;
+    } 
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      * {
+        scroll-behavior: smooth;
+      }
+    }
+     
