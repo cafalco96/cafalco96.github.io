@@ -1,0 +1,20 @@
+* {
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#fondo_index {
+    background-color: $color7;
+
+    @media only screen and (min-width: 768px) {
+        background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
+    }
+
+    @media only screen and (min-width: 950px) {
+        background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
+    }
+}
+
+#fondo_about {
+    background-color: $color7;
+}
