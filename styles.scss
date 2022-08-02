@@ -1,9 +1,14 @@
 @import "colores";
+
 * {
     margin: auto;
-   
+
 }
-#fondo_ojos{ background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);}
+
+#fondo_ojos {
+    background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
+}
+
 @mixin flexnav($dis, $justify, $wrap, $align, $pad, $margin, $height) {
     display: $dis;
     justify-content: $justify;
@@ -59,7 +64,7 @@ ul {
 
     li {
         list-style: none;
-        color:$color1;
+        color: $color1;
         margin: 0 0.2rem;
         padding: 0.2rem;
         display: block;
@@ -120,7 +125,8 @@ h2 {
     font-size: 23px;
     border: 3px solid $color7;
     color: $color1;
-background-color: $color7;
+    background-color: $color7;
+
     &:hover {
         cursor: pointer;
         border: 3px solid $color3;
@@ -143,7 +149,7 @@ background-color: $color7;
         &:hover {
             color: $color3;
             text-decoration: underline;
-            font-size:30px;
+            font-size: 30px;
         }
     }
 }
@@ -160,4 +166,5 @@ background-color: $color7;
 
     @include iconos();
 }
+
 @import 'abo';
