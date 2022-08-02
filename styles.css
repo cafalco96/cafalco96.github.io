@@ -3,7 +3,17 @@
 }
 
 #fondo_ojos {
-  background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
+  background-color: black;
+}
+@media only screen and (min-width: 768px) {
+  #fondo_ojos {
+    background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
+  }
+}
+@media only screen and (min-width: 950px) {
+  #fondo_ojos {
+    background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
+  }
 }
 
 h2 {
@@ -140,9 +150,18 @@ ul a:hover {
 
 .personal {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
   gap: 20px 20px;
+}
+@media only screen and (min-width: 768px) {
+  .personal {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .personal {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 #soy {
@@ -150,17 +169,37 @@ ul a:hover {
   text-align: justify;
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #soy {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  #soy {
+    font-size: 30px;
+  }
 }
 
 .yo {
   grid-column: 1fr;
-  width: 400px;
+  width: 150px;
   margin-top: 10px;
   position: fix;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (min-width: 768px) {
+  .yo {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .yo {
+    width: 400px;
+  }
 }
 
 #quiero {
@@ -168,18 +207,38 @@ ul a:hover {
   align-self: center;
   justify-self: center;
   color: white;
-  font-size: 30px;
+  font-size: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #quiero {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  #quiero {
+    font-size: 30px;
+  }
 }
 
 #atentos {
   grid-column: 1/3;
   color: white;
-  font-size: 45px;
+  font-size: 20px;
   text-align: center;
   justify-self: center;
   align-self: center;
 }
+@media only screen and (min-width: 768px) {
+  #atentos {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  #atentos {
+    font-size: 45px;
+  }
+}
 
-body {
+.fondo {
   background-color: black;
 }/*# sourceMappingURL=styles.css.map */
