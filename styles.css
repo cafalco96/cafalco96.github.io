@@ -1,98 +1,185 @@
-*{margin:auto;
-    background-color:#1D5690;
-    }
-    #navbar{display:flex;
-    width:100%;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    }
-    #navbar ul{display: flex;
-        justify-content: space-evenly;
-      flex-wrap: wrap;
-        align-items: center;
-        padding-inline-start: 0;
-        margin-block: 0;
-        height: 100%;}
-      li > a {
-      color: inherit;
-      text-decoration: none;
-      
-    }
-    #navbar > ul > li {
-      color: white;
-      margin: 0 0.2rem;
-        padding: 0.2rem;
-        display: block;
-      font-size:20px;
-    }
-    header{background-color:#B92844;}
-    #welcome-section{background-color:#373849;}
-    #welcome-section h1{color:white;
-    text-align:center;
-    font-weight:bold;
-    font-size:40px;}
-    #welcome-section p{text-align:center;color:#C8213D;
-    font-size:20px;}
-    nav > ul > li:hover {
-      background-color: #dfdfe2;
-      color: #1b1b32;
-      cursor: pointer;}
-    h2{color:white;
-    font-size:25px;
-    text-align:center;
-    text-decoration: underline;}
-    #projects{display:grid;
-    grid-template-columns: 1fr;
-    width:100%;
-    gap:auto;}
-    
-    .grid{width:300px;
-    margin-top:10px;
-    position:fix;
-    aspect-ratio:1/1;  
-      object-fit:cover;
-    }
-    #profile-link #white {
-        display: block;
-        margin: 40px auto;
-        padding: 15px;
-        font-size: 23px;
-      border:3px solid black;
-    }
-    footer{text-align:center;color:white;}
-    .social-icons i{color:black;
-    font-size:2rem;}
-     #profile-link #white:hover {
-      cursor: pointer;
-      border: 3px solid white;
-      background-color:white;
-        padding:15px;
-       border-radius:20%;
-    }
-      .center{display:flex;
-      justify-content:center;}
-    .center a{text-decoration:none;
-    color:white;}
-    .center a:hover{text-decoration:underline;
-    font-size:20px;}
-    @media only screen and (min-width: 768px) {
-      #projects {
-        grid-template-columns: 1fr 1fr;
-      .social-icons {
-        font-size: 4rem;
-      }
-      }
-      @media only screen and (min-width: 950px) {
-      #projects {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-        .social-icons {
-        font-size: 25px;
-    } 
-    }
-    @media (prefers-reduced-motion: no-preference) {
-      * {
-        scroll-behavior: smooth;
-      }
-    }
-     
+* {
+  margin: auto;
+}
+
+#fondo_ojos {
+  background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.grid {
+  width: 300px;
+  margin-top: 10px;
+  position: fix;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+ul li {
+  list-style: none;
+  color: #7E8682;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+  font-size: 20px;
+}
+ul a {
+  color: inherit;
+  text-decoration: none;
+}
+ul a:hover {
+  color: white;
+  cursor: pointer;
+  transition: 2s;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 90px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  #projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 950px) {
+  #projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#welcome-section h1 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+#welcome-section p {
+  text-align: center;
+  color: #F3E6E0;
+  font-size: 25px;
+}
+
+#white {
+  display: block;
+  margin: 40px auto;
+  padding: 15px;
+  font-size: 23px;
+  border: 3px solid black;
+  color: #7E8682;
+  background-color: black;
+}
+#white:hover {
+  cursor: pointer;
+  border: 3px solid white;
+  padding: 15px;
+  border-radius: 20%;
+  transition: 2s;
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.center a {
+  color: #7E8682;
+  text-decoration: none;
+}
+.center a:hover {
+  color: white;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+#contact {
+  text-align: center;
+  color: white;
+}
+#contact i {
+  color: white;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  #contact {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 950px) {
+  #contact {
+    font-size: 25px;
+  }
+}
+
+.personal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+}
+
+#soy {
+  grid-column: 1/3;
+  text-align: justify;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.yo {
+  grid-column: 1fr;
+  width: 400px;
+  margin-top: 10px;
+  position: fix;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#quiero {
+  grid-column: 1fr;
+  align-self: center;
+  justify-self: center;
+  color: white;
+  font-size: 30px;
+}
+
+#atentos {
+  grid-column: 1/3;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+body {
+  background-color: black;
+}/*# sourceMappingURL=styles.css.map */

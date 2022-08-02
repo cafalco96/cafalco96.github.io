@@ -1,0 +1,41 @@
+.personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+}
+
+#soy {
+    grid-column: 1/3;
+    text-align: justify;
+    text-align: center;
+    color: $color3;
+    font-size: 30px;
+}
+
+.yo {
+    grid-column: 1fr;
+    width: 400px;
+    margin-top: 10px;
+    position: fix;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#quiero {
+    grid-column: 1fr;
+    align-self: center;
+    justify-self: center;
+    color: $color3;
+    font-size: 30px;
+}
+
+#atentos {
+    grid-column: 1/3;
+    color: $color3;
+font-size: 45px;    
+text-align: center;
+justify-self: center;
+align-self: center;
+}
+body{background-color: $color7;}
