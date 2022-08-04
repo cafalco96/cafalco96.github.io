@@ -10,6 +10,19 @@ body {
     font-size: 100%;
     font-family: $typetext;
     color: $color3;
+
+    h1 {
+        color: $color3;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    p {
+        text-align: center;
+        color: #F3E6E0;
+        font-size: 25px;
+    }
 }
 
 .background-eyes {
@@ -31,4 +44,26 @@ a {
     text-decoration: none;
     color: inherit;
     font-size: inherit;
+}
+
+.cta-SeeMore {
+    display: block;
+    margin: 40px auto;
+    padding: 15px;
+    font-size: 23px;
+    border: 3px solid $color7;
+    color: $color1;
+    width: 15%;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        border: 3px solid $color3;
+        padding: 15px;
+        border-radius: 20%;
+        transition: 2s;
+        color: $color3;
+    }
+
+    @include iconos();
 }
