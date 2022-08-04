@@ -20,7 +20,7 @@
 #section_contact {
     text-align: center;
     color: $color3;
-
+    a{display: inline;}
     i {
         color: $color3;
         font-size: 2rem;
@@ -49,9 +49,6 @@
     @extend %titulo2;
 }
 
-.img_section_projects {
-    @extend %imagenes;
-}
 
 
 
