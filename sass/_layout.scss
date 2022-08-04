@@ -1,33 +1,3 @@
-.navbar-header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    ul {
-        @include flexnav(flex, space-evenly, wrap, center, 0, 0, 100%);
-    }
-
-    li {
-        list-style: none;
-        color: $color1;
-        margin: 0 0.2rem;
-        padding: 0.2rem;
-        display: block;
-        font-size: 20px;
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
-
-        &:hover {
-            color: $color3;
-            cursor: pointer;
-            transition: 2s;
-        }
-    }
-}
 
 .Grid-projects {
     @include grid(100%, 90px);
@@ -36,8 +6,6 @@
 
 .Contact-section {
     text-align: center;
-    color: $color3;
-
 
 
 }

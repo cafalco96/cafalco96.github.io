@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: $color7;
+    background-color: $colorblack;
     font-size: 100%;
     font-family: $typetext;
-    color: $color3;
+    color: $colorwhite;
 
     h1 {
-        color: $color3;
+        color: $colorwhite;
         text-align: center;
         font-weight: bold;
         font-size: 40px;
@@ -20,7 +20,7 @@ body {
 
     p {
         text-align: center;
-        color: #F3E6E0;
+        color: $colortext;
         font-size: 25px;
     }
 }
@@ -51,18 +51,18 @@ a {
     margin: 40px auto;
     padding: 15px;
     font-size: 23px;
-    border: 3px solid $color7;
-    color: $color1;
+    border: 3px solid $colorblack;
+    color: $colortext;
     width: 15%;
     text-align: center;
 
     &:hover {
         cursor: pointer;
-        border: 3px solid $color3;
+        border: 3px solid $colorwhite;
         padding: 15px;
         border-radius: 20%;
         transition: 2s;
-        color: $color3;
+        color: $colorwhite;
     }
 
     @include iconos();
