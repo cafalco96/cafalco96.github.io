@@ -1,8 +1,10 @@
 @import "var";
 @import "tools";
 @import "base";
-@import "Modules/navbar";
-@import "Modules/grid-section";
-@import "Modules/icons-social-redes";
-@import "Modules/flex-section";
+@import "atoms/link-buttom";
+@import "atoms/imgs-project";
+@import "components/navbar";
+@import "components/grid-section";
+@import "components/icons-social-redes";
+@import "components/flex-section";
 @import "layout";
