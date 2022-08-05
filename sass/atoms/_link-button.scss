@@ -13,15 +13,10 @@
     &:hover {
         color: #fdb924;
     }
+
 }
 
-/*important*/
-
-a.button.tertiary:hover:before {
-    width: 10%;
-}
-
-a.button.tertiary:before {
+.tertiary:before {
     position: absolute;
     content: '';
     height: 2px;
@@ -33,4 +28,8 @@ a.button.tertiary:before {
     background: #fdb924;
     transition: width .1s ease-in-out;
     color: inherit;
+}
+
+.tertiary:hover:before {
+    width: 10%;
 }
