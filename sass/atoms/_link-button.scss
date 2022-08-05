@@ -14,22 +14,21 @@
         color: #fdb924;
     }
 
-}
+    &:before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 5%;
+        background: #fdb924;
+        transition: width .1s ease-in-out;
+        color: inherit;
+    }
 
-.tertiary:before {
-    position: absolute;
-    content: '';
-    height: 2px;
-    bottom: 0;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 5%;
-    background: #fdb924;
-    transition: width .1s ease-in-out;
-    color: inherit;
-}
-
-.tertiary:hover:before {
-    width: 10%;
+    &:hover:before {
+        width: 10%;
+    }
 }
