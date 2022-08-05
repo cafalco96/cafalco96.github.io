@@ -1,11 +1,18 @@
 * {
     margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-#fondo_index {
-    background-color: $color7;
+body {
+    background-color: $colorblack;
+    font-size: 100%;
+    font-family: $typetext;
+    color: $colorwhite;
+}
 
+.background-eyes {
     @media only screen and (min-width: 768px) {
         background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
     }
@@ -15,6 +22,24 @@
     }
 }
 
-#fondo_about {
-    background-color: $color7;
+
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+h1 {
+    color: $colorwhite;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    color: $colortext;
+    font-size: 25px;
 }

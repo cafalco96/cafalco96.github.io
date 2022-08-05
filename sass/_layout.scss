@@ -1,97 +1,14 @@
-#header_navbar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    ul {
-        @include flexnav(flex, space-evenly, wrap, center, 0, 0, 100%);
-    }
-}
-
-#section_projects {
+.grid-projects {
     @include grid(100%, 90px);
 }
 
-.c_about {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px 20px;
 
-    @media only screen and (min-width: 768px) {
-        grid-template-columns: 1fr;
-    }
-
-    @media only screen and (min-width: 950px) {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-.p1_about {
-    grid-column: 1/3;
-    text-align: justify;
+.contact-section {
     text-align: center;
-    color: $color3;
-    font-size: 10px;
 
-    @media only screen and (min-width: 768px) {
-        font-size: 15px;
-        ;
-    }
 
-    @media only screen and (min-width: 950px) {
-        font-size: 30px;
-    }
 }
 
-.img_about {
-    grid-column: 1fr;
-    width: 150px;
-    margin-top: 10px;
-    position: fix;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-
-    @media only screen and (min-width: 768px) {
-        width: 250px;
-    }
-
-    @media only screen and (min-width: 950px) {
-        width: 400px;
-    }
-}
-
-.p2_about {
-    grid-column: 1fr;
-    align-self: center;
-    justify-self: center;
-    color: $color3;
-    font-size: 10px;
-
-    @media only screen and (min-width: 768px) {
-        font-size: 15px;
-        ;
-    }
-
-    @media only screen and (min-width: 950px) {
-        font-size: 30px;
-    }
-}
-
-.p3_about {
-    grid-column: 1/3;
-    color: $color3;
-    font-size: 20px;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-
-    @media only screen and (min-width: 768px) {
-        font-size: 25px;
-        ;
-    }
-
-    @media only screen and (min-width: 950px) {
-        font-size: 45px;
-    }
+.welcome-section {
+    margin-top: 3%;
 }

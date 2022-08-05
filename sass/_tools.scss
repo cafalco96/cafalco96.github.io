@@ -1,0 +1,38 @@
+@mixin grid($ancho, $espacio) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $espacio;
+    width: $ancho;
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (min-width: 950px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@mixin iconos() {
+    @media only screen and (min-width: 768px) {
+        font-size: 4rem;
+    }
+
+    @media only screen and (min-width: 950px) {
+        font-size: 25px;
+    }
+}
+
+%main-tittles {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+%images {
+    width: 300px;
+    margin-top: 10px;
+    position: fix;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}

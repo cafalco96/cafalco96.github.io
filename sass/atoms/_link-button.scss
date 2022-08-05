@@ -1,0 +1,34 @@
+.button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: auto;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    margin: 40px auto;
+    padding: 15px;
+    text-align: center;
+
+    &:hover {
+        color: #fdb924;
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 5%;
+        background: #fdb924;
+        transition: width .1s ease-in-out;
+        color: inherit;
+    }
+
+    &:hover:before {
+        width: 10%;
+    }
+}
