@@ -58,33 +58,39 @@ p {
   font-size: 25px;
 }
 
-.cta-seemore {
+.button {
+  position: relative;
   display: block;
+  overflow: hidden;
+  width: auto;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
   margin: 40px auto;
   padding: 15px;
-  font-size: 23px;
-  border: 3px solid black;
-  color: #949789;
-  width: 15%;
   text-align: center;
 }
-.cta-seemore:hover {
-  cursor: pointer;
-  border: 3px solid white;
-  padding: 15px;
-  border-radius: 20%;
-  transition: 2s;
-  color: white;
+.button:hover {
+  color: #fdb924;
 }
-@media only screen and (min-width: 768px) {
-  .cta-seemore {
-    font-size: 4rem;
-  }
+
+/*important*/
+a.button.tertiary:hover:before {
+  width: 10%;
 }
-@media only screen and (min-width: 950px) {
-  .cta-seemore {
-    font-size: 25px;
-  }
+
+a.button.tertiary:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 5%;
+  background: #fdb924;
+  transition: width 0.1s ease-in-out;
+  color: inherit;
 }
 
 .navbar-header {

@@ -1,13 +1,3 @@
-@mixin flexnav($dis, $justify, $wrap, $align, $pad, $margin, $height) {
-    display: $dis;
-    justify-content: $justify;
-    flex-wrap: $wrap;
-    align-items: $align;
-    padding-inline-start: $pad;
-    margin-block: $margin;
-    height: $height;
-}
-
 @mixin grid($ancho, $espacio) {
     display: grid;
     grid-template-columns: 1fr;
