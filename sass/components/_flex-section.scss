@@ -1,14 +1,15 @@
 .Flex-project {
     display: flex;
-    width: 90%;
-    justify-content: space-around;
-    margin: 5rem 5rem 5rem 5rem;
+    justify-content: space-evenly;
+    width: 70%;
 
-    &__Img {
-        width: 60%;
+    p {
+        font-size: 10px;
     }
 
-    &__text_aaside {
-        width: 40%;
+    @media only screen and (min-width: 950px) {
+        p {
+            font-size: 25px;
+        }
     }
 }

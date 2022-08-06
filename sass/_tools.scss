@@ -13,16 +13,6 @@
     }
 }
 
-@mixin iconos() {
-    @media only screen and (min-width: 768px) {
-        font-size: 4rem;
-    }
-
-    @media only screen and (min-width: 950px) {
-        font-size: 25px;
-    }
-}
-
 %main-tittles {
     font-size: 30px;
     text-align: center;
