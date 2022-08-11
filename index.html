@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=width-device, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="sass/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
   <title>My Folder Carlos Falconi</title>
 </head>
 
-<body>
+<body class="layout-main-pag">
   <header>
     <nav class="navbar-header" role="navigation">
       <ul>
@@ -19,50 +19,52 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="layout-main-pag__main">
     <section class="welcome-section">
       <h1>Hey I am Carlos</h1>
       <br>
       <p>a web developer</p>
     </section>
     <section class="grid-section">
-      <p class="grid-main-tittle">These are some of my projects</p>
+      <p class="grid-section__main-title">These are some of my projects</p>
       <br>
-      <div class="grid-projects">
-        <div class="project-tile"> <a href="https://codepen.io/carlos-alfredo-falconi/pen/bGLMEjB"> <img
-              src="https://i.postimg.cc/G2ZZDy5Y/peces.jpg" alt="Acuarium form" />
-            <p class="project-tile__tittle">Aquarium form
+      <div class="grid-project">
+        <div> <a href="https://codepen.io/carlos-alfredo-falconi/pen/bGLMEjB"> <img
+              src="https://i.postimg.cc/G2ZZDy5Y/peces.jpg" class="grid-project__image" alt="Acuarium form" />
+            <p class="grid-project__title">Aquarium form
           </a></p>
         </div>
-        <div class="project-tile"> <a href="https://codepen.io/carlos-alfredo-falconi/pen/OJQzeLG"> <img
+        <div> <a href="https://codepen.io/carlos-alfredo-falconi/pen/OJQzeLG"> <img class="grid-project__image"
               src="https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg" alt="Coffe Menu" />
-            <p class="project-tile__tittle">Coffe Menu
+            <p class=" grid-project__title">Coffe Menu
           </a></p>
         </div>
-        <div class="project-tile">
+        <div>
           <a href="https://codepen.io/carlos-alfredo-falconi/pen/Yzegybg"> <img
               src="https://www.acerowebsite.com/wp-content/uploads/2022/01/Viuda-Negra-articulo.jpg"
-              alt="Viuda Negra Tribute" />
-            <p class="project-tile__tittle">Viuda Negra Tribute
+              class="grid-project__image" alt=" Viuda Negra Tribute" />
+            <p class="grid-project__title">Viuda Negra Tribute
           </a></p>
         </div>
-        <div class="project-tile"> <a href="https://codepen.io/carlos-alfredo-falconi/pen/yLvmRGP"> <img
-              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Cats Imagen" />
-            <p class="project-tile__tittle">Cats Imagen
+        <div> <a href="https://codepen.io/carlos-alfredo-falconi/pen/yLvmRGP"> <img
+              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Cats Imagen"
+              class="grid-project__image" />
+            <p class=" grid-project__title">Cats Imagen
           </a></p>
         </div>
-        <div class="project-tile">
+        <div>
           <a href="https://codepen.io/carlos-alfredo-falconi/pen/eYVqPxr"> <img
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="Magazine" />
-            <p class="project-tile__tittle">Magazine
+              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="Magazine"
+              class="grid-project__image" />
+            <p class=" grid-project__title">Magazine
           </a></p>
         </div>
-        <div class="project-tile"> <a href="https://codepen.io/carlos-alfredo-falconi/pen/vYdoVPY"> <img
-              src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg" alt="Photos" />
-            <p class="project-tile__tittle">Photos
+        <div> <a href="https://codepen.io/carlos-alfredo-falconi/pen/vYdoVPY"> <img
+              src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg" alt="Photos"
+              class="grid-project__image" />
+            <p class=" grid-project__title">Photos
           </a></p>
         </div>
-      </div>
       </div>
       <div class="link-button-section">
         <a target="_blank" href="https://codepen.io/carlos-alfredo-falconi" class="button"
@@ -71,8 +73,9 @@
     </section>
   </main>
 
-  <section class="contact-section">
-    <footer>
+
+  <footer class="layout-main-pag__footer">
+    <section class="contact-section">
       <h1>Let's work together...</h1><br>
       <p>How do you take your coffee?</p><br>
       <div class="social-icons">
@@ -87,7 +90,8 @@
           <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
-  </section>
+    </section>
+  </footer>
 </body>
 
 </html>

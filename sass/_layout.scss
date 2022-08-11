@@ -1,20 +1,31 @@
-.grid-projects {
-    @include grid(100%, 90px);
+.layout-main-pag {
+    &__main {
+        margin-top: 4%;
+    }
+
+    &__footer {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
 }
 
+.layout-full-width {
+    width: 100%;
 
-.contact-section {
-    text-align: center;
+    &__header {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
+    &__main {
+        max-width: 1600px;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
 
-}
-
-.welcome-section {
-    margin-top: 3%;
-}
-
-.link-button-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__footer {
+        margin-top: 5%;
+    }
 }
