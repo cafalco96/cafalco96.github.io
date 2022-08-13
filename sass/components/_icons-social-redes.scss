@@ -1,12 +1,12 @@
 .contact-section {
-    a {
+
+    &__social-icons {
         display: inline;
         text-align: center;
     }
 
-    i {
+    &contact-section__logo-icons {
         color: $colorwhite;
         font-size: 2rem;
-        
     }
 }

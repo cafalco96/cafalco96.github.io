@@ -4,13 +4,12 @@
     &__header {
         margin-top: 5%;
         margin-bottom: 5%;
+        text-align: center;
     }
 
     &__main {
         max-width: 1600px;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
+        margin: 0 auto 0 auto;
     }
 
     &__footer {

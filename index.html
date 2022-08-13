@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <div class="layout-full-width">
     <nav class="navbar-header" role="navigation">
       <ul>
         <li><a href="about.html">About</a></li>
@@ -18,13 +18,16 @@
         <li><a href="#contact-section">Contact</a></li>
       </ul>
     </nav>
-  </header>
-  <main>
-    <section class="welcome-section layout-full-width__header">
-      <h1>Hey I am Carlos</h1>
-      <br>
-      <p>a web developer</p>
-    </section>
+    <main>
+      <div class="layout-full-width__main">
+        <header>
+          <div class="layout-full-width__header">
+            <h1>Hey I am Carlos</h1>
+            <br>
+            <p>a web developer</p>
+          </div>
+      </div>
+    </main>
     <section class="grid-section">
       <p class="grid-section__main-title">These are some of my projects</p>
       <br>
@@ -71,27 +74,30 @@
           aria-label="You can see others Projects in my Codpen">See More</a>
       </div>
     </section>
-  </main>
+    <footer>
+      <div class="layout-full-width__footer">
+        <section class="contact-section">
+          <h1>Let's work together...</h1><br>
+          <p>How do you take your coffee?</p><br>
+          
+            <a class="contact-section__social-icons" href="https://www.facebook.com/carlosalfredo.falconi/"
+              aria-label="You can enter to my Facebook">
+              <i class="fab fa-facebook-f contact-section__logo-icons"></i>
+            </a>
 
-
-  <footer class="layout-full-width__footer">
-    <section class="contact-section">
-      <h1>Let's work together...</h1><br>
-      <p>How do you take your coffee?</p><br>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/carlosalfredo.falconi/" aria-label="You can enter to my Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-
-        <a href="https://www.instagram.com/carlous_falco/" aria-label="You can enter to my Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/carlos-falconi-lucas-3539a4209/" aria-label="You can enter to my Linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+            <a class="contact-section__social-icons" href="https://www.instagram.com/carlous_falco/"
+              aria-label="You can enter to my Instagram">
+              <i class="fab fa-instagram contact-section__logo-icons"></i>
+            </a>
+            <a class="contact-section__social-icons" href="https://www.linkedin.com/in/carlos-falconi-lucas-3539a4209/"
+              aria-label="You can enter to my Linkedin">
+              <i class="fab fa-linkedin-in contact-section__logo-icons"></i>
+            </a>
+        
+        </section>
       </div>
-    </section>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

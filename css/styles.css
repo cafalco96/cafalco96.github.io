@@ -42,7 +42,6 @@ h1 {
 }
 
 p {
-  text-align: center;
   color: #949789;
   font-size: 25px;
 }
@@ -167,11 +166,11 @@ p {
   text-decoration: underline;
 }
 
-.contact-section a {
+.contact-section__social-icons {
   display: inline;
   text-align: center;
 }
-.contact-section i {
+.contact-sectioncontact-section__logo-icons {
   color: white;
   font-size: 2rem;
 }
@@ -220,7 +219,6 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
   grid-auto-rows: 150px;
   grid-gap: 20px;
-  grid-auto-flow: column;
   margin: 5% auto 15% auto;
 }
 .grid-projects-work__image {
@@ -249,12 +247,11 @@ p {
 .layout-full-width__header {
   margin-top: 5%;
   margin-bottom: 5%;
+  text-align: center;
 }
 .layout-full-width__main {
   max-width: 1600px;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
+  margin: 0 auto 0 auto;
 }
 .layout-full-width__footer {
   margin-top: 5%;
