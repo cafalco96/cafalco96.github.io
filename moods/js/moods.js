@@ -136,7 +136,7 @@ function chooseMoodPlayer() {
     moodPlayer = inputAnger.id;
   } else {
     alert("Please choose a mood");
-    return;
+    return restartGame();
   }
 
   extractFeels(moodPlayer);
@@ -531,11 +531,11 @@ function fight() {
 
 function reviewVictorys() {
   if (playerVictorys === pcVictorys) {
-    finalMessage("Esto fue un empate!!!");
+    finalMessage("similar emotions 😉");
   } else if (playerVictorys > pcVictorys) {
-    finalMessage("FELICITACIONES! Ganaste :)");
+    finalMessage("Your emotions are strong !!!!! Congratulations 🤗");
   } else {
-    finalMessage("Lo siento, perdiste :(");
+    finalMessage("Sorry, your emotions are weak 😔");
   }
 }
 
