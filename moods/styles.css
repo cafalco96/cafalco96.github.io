@@ -117,6 +117,16 @@ input:checked + label {
   align-items: center;
 }
 
+#map-section{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.map{
+  border:2px solid #11468F;
+  width: 60%;
+  height: 80%;
+}
 @media (min-width: 992px) {
   .cards-moods, .cards-feels {
     flex-direction: row;

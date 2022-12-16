@@ -17,6 +17,9 @@ const messageFeelPlayer = document.querySelector(".feel-player");
 const messageFeelPc = document.querySelector(".feel-pc");
 const moodContent = document.getElementById("mood-content");
 const feelContent = document.getElementById("feel-content");
+const mapSection = document.getElementById("map-section");
+const map = document.querySelector(".map");
+const moveButton = document.querySelector(".move-button");
 
 let moods = [];
 let feelPlayer = [];
@@ -35,12 +38,24 @@ let indexFeelPlayer;
 let indexFeelPc;
 let playerVictorys = 0;
 let pcVictorys = 0;
+let pencil = map.getContext("2d");
+let updateMove;
+let backgroundImageMap = new Image();
+let moodMapPlayer;
 
 class Mood {
   constructor(name, image) {
     this.name = name;
     this.image = image;
     this.feels = [];
+    this.x = 20;
+    this.y = 30;
+    this.width = 50;
+    this.height = 50;
+    this.mapImage = new Image();
+    this.mapImage.src = image;
+    this.speedx = 0;
+    this.speedy = 0;
   }
 }
 
@@ -91,6 +106,7 @@ moods.push(joy, sadness, fear, disgust, anger);
 
 function startGame() {
   chooseFeelSection.style.display = "none";
+  mapSection.style.display = "none";
 
   moods.forEach((mood) => {
     moodOptions = `
@@ -116,8 +132,8 @@ function startGame() {
 
 function chooseMoodPlayer() {
   chooseMoodSection.style.display = "none";
-
-  chooseFeelSection.style.display = "flex";
+  mapSection.style.display = "flex";
+  // chooseFeelSection.style.display = "flex";
 
   if (inputJoy.checked) {
     nameMoodPlayer.innerHTML = inputJoy.id;
@@ -141,6 +157,7 @@ function chooseMoodPlayer() {
 
   extractFeels(moodPlayer);
   chooseMoodPc();
+  startMap();
 }
 
 function extractFeels(moodPlayer) {
@@ -560,6 +577,50 @@ function restartGame() {
   location.reload();
 }
 
+function drawMap() {
+  backgroundImageMap.src = "./assets/resumen-fondo-claro-plano-disecciono-muchas-piezas-diferentes-niveles_75780-578.webp";
+  moodMapPlayer.x = moodMapPlayer.x + moodMapPlayer.speedx;
+  moodMapPlayer.y = moodMapPlayer.y + moodMapPlayer.speedy;
+  pencil.clearRect(0,0,map.width,map.height);
+  pencil.drawImage(backgroundImageMap,0,0,map.width,map.height);
+  pencil.drawImage(moodMapPlayer.mapImage,moodMapPlayer.x,moodMapPlayer.y,moodMapPlayer.width,moodMapPlayer.height);
+}
+function moveMood() {
+  switch (event.key){
+    case "ArrowUp":
+      moodMapPlayer.speedy = -5;
+      break;
+      case 'ArrowDown':
+        moodMapPlayer.speedy = 5;
+        break;
+    case 'ArrowLeft':
+      moodMapPlayer.speedx = -5;
+      break;
+     case 'ArrowRight':
+      moodMapPlayer.speedx = 5;
+      break;
+      default:
+        break;     
+  }
+  
+}
+function stopMove() {
+  moodMapPlayer.speedx = 0;
+  moodMapPlayer.speedy = 0;
+}
+function startMap(){
+  chooseMoodMapPlayer(moodPlayer);
+  updateMove = setInterval(drawMap,50);
+  window.addEventListener('keydown',moveMood);
+  window.addEventListener('keyup',stopMove);
+}
+function chooseMoodMapPlayer(moodPlayer){
+  for (let j = 0; j < moods.length; j++) {
+    if (moods[j].name === moodPlayer) {
+      moodMapPlayer = moods[j]; 
+    }
+  }
+}
 function randomOpction(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
