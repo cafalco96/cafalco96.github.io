@@ -12,16 +12,6 @@ body {
     color: $colorwhite;
 }
 
-.background-eyes {
-    @media only screen and (min-width: 768px) {
-        background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
-    }
-
-    @media only screen and (min-width: 950px) {
-        background-image: url(https://media.giphy.com/media/3ov9jZfZ5GuNV17mYE/giphy.gif);
-    }
-}
-
 a {
     display: block;
     text-decoration: none;
@@ -37,7 +27,6 @@ h1 {
 }
 
 p {
-    text-align: center;
     color: $colortext;
     font-size: 25px;
 }

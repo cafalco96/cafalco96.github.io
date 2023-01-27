@@ -1,15 +1,49 @@
-.Flex-project {
+.flex-project {
     display: flex;
     justify-content: space-evenly;
-    width: 70%;
 
-    p {
-        font-size: 10px;
-    }
+    &__image {
+        box-sizing: border-box;
+        width: 40%;
 
-    @media only screen and (min-width: 950px) {
-        p {
-            font-size: 25px;
+        &-img {
+            width: 150px;
+
+            @media only screen and (min-width: 768px) {
+
+                width: 300px;
+
+            }
+
+            @media only screen and (min-width: 950px) {
+
+                width: 300px;
+
+            }
         }
     }
+
+    &__title {
+        width: 20%;
+        box-sizing: border-box;
+
+        &-text {
+            font-size: 10px;
+
+            @media only screen and (min-width: 768px) {
+
+                font-size: 15px;
+
+            }
+
+            @media only screen and (min-width: 950px) {
+
+                font-size: 20px;
+
+            }
+        }
+
+    }
+
+
 }
