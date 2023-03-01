@@ -1,0 +1,11 @@
+.to-do--search-input {
+  background-image: url("../assets/search-solid.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 7px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-width: medium;
+  border-radius: 7%;
+}

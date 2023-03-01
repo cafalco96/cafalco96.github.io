@@ -1,0 +1,32 @@
+.to-do-items-section--container {
+  border-bottom: 1px solid black;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.to-do--icon-check,
+.to-do--icon-delete {
+  background-color: white;
+  border: none;
+}
+.to-do--icon-delete img,
+.to-do--icon-check img {
+  width: 25px;
+}
+
+.to-do--icon-delete img:hover {
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+  cursor: pointer;
+}
+.to-do--icon-check img:hover {
+  cursor: pointer;
+  filter: opacity(0.4) drop-shadow(0 0 0 green);
+}
+.to-do--icon-check__active img {
+  filter: opacity(0.4) drop-shadow(0 0 0 green);
+  cursor: pointer;
+}
+.to-do-items-section--content__completed {
+  text-decoration: line-through;
+}
