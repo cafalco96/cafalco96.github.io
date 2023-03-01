@@ -1,0 +1,10 @@
+.to-do-items-section--list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7px;
+  margin: 35px 0 0 0;
+  list-style: none;
+  justify-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
