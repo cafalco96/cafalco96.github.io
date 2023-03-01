@@ -231,6 +231,15 @@ p {
   font-size: 20px;
   color: #949789;
 }
+.grid-projects-work__title__certificates {
+  display: flex;
+  justify-content: center;
+}
+.grid-projects-work__title__certificates:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .grid-projects-work__title a {
   color: #949789;
   text-decoration: none;
