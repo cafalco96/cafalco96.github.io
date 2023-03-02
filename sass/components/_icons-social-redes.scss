@@ -1,12 +1,12 @@
 .contact-section {
-
+&__icons-container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: center;
+    font-size: 2rem;
+}
     &__social-icons {
         display: inline;
         text-align: center;
-    }
-
-    &contact-section__logo-icons {
-        color: $colorwhite;
-        font-size: 2rem;
     }
 }
