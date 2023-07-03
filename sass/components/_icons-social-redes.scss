@@ -1,13 +1,113 @@
 .contact-section {
   &__icons-container {
-    display: grid;
-    grid-template-columns: 50px 50px 50px;
-    justify-content: center;
     font-size: 2rem;
-    margin-bottom: 5%;
+    margin: 3% 0 5% 0;
+    p {
+      color: $colorwhite;
+      font-size: 2rem;
+    }
   }
-  &__social-icons {
-    display: inline;
-    text-align: center;
+  &--social-icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    &--up-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+    }
+    &--down-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+    }
+    &--card1 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 90px 5px 5px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        scale: 1.1;
+        background-color: #cc39a4;
+        .instagram {
+          fill: white;
+        }
+      }
+    }
+    &--card2 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 5px 90px 5px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        scale: 1.1;
+        background-color: #03a9f4;
+        .twitter {
+          fill: white;
+        }
+      }
+    }
+  &--card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: black;
+      .github {
+        fill: white;
+      }
+    }
   }
+  &--card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: hsl(214, 100%, 59%);
+    }
+  }
+}
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -0.9em;
+    fill: #03a9f4;
+  }
+  .github {
+    margin-top: -0.6em;
+    margin-left: 1.2em;
+  }
+
 }
