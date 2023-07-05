@@ -534,7 +534,7 @@ p {
 .personal-card {
   margin: 50px auto 50px auto;
   width: 390px;
-  height: 500px;
+  height: 545px;
   transition: all 0.2s;
   position: relative;
 }
@@ -568,9 +568,10 @@ p {
   font-size: 15px;
   text-align: justify;
   padding: 25px;
+  margin-top: 0;
 }
 .personal-card--inner img {
-  width: 100px;
+  width: 150px;
 }
 .personal-card:hover {
   transform: scale(1.04) rotate(1deg);
@@ -602,6 +603,10 @@ p {
   margin-top: 3%;
   align-items: center;
   text-align: center;
+}
+
+.mt-full {
+  margin-top: 80px;
 }
 
 /*# sourceMappingURL=styles.css.map */

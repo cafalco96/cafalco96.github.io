@@ -1,7 +1,7 @@
 .personal-card {
   margin: 50px auto 50px auto;
   width: 390px;
-  height: 500px;
+  height: 545px;
   transition: all 0.2s;
   position: relative;
   &--circle {
@@ -24,7 +24,7 @@
   &--inner {
     width: inherit;
     height: inherit;
-    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     border-radius: 8px;
     display: flex;
@@ -33,9 +33,10 @@
       font-size: 15px;
       text-align: justify;
       padding: 25px;
+      margin-top: 0;
     }
     img {
-      width: 100px;
+      width: 150px;
     }
   }
   &:hover {
