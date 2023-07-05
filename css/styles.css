@@ -572,6 +572,7 @@ p {
 }
 .personal-card--inner img {
   width: 150px;
+  border-radius: 50%;
 }
 .personal-card:hover {
   transform: scale(1.04) rotate(1deg);
