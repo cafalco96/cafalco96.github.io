@@ -133,6 +133,11 @@ let certificates = [{
   name:'JavaScript Asynchronism',
   description: 'Platzi JavaScript Asynchronism',
 },
+{
+  img:'https://i.ibb.co/djy3nHy/diploma-frameworks-javascript.jpg',
+  name: 'JavaScript Frameworks and Libraries',
+  description:'Platzi JavaScript Frameworks and Libraries',
+},
 ];
 const certificatesContainer = document.querySelector(".certificates-container");
 const addCertificates = (() => {
