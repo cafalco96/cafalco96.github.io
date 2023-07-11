@@ -138,6 +138,11 @@ let certificates = [{
   name: 'JavaScript Frameworks and Libraries',
   description:'Platzi JavaScript Frameworks and Libraries',
 },
+{
+  img: 'https://i.ibb.co/nP5HZ2y/diploma-vue-router.jpg',
+  name:'Navigation with Vue Router',
+  description:'Platzi Navigation with Vue Router',
+},
 ];
 const certificatesContainer = document.querySelector(".certificates-container");
 const addCertificates = (() => {
