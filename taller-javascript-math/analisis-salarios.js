@@ -38,18 +38,17 @@ function findPerson(ciPerson) {
 }
 function medianaForPerson(ciPerson) {
   for (salario of salarios) {
-    if (salario.ci != ciPerson) {
-      personMedianaNameRes.innerText += `El número ingresado no está en el sistema`;
-      return;
-    } else {
+    if (salario.ci == ciPerson) {
       const name = findPerson(ciPerson).name;
       const jobs = findPerson(ciPerson).trabajos;
       const salarios = jobs.map((job) => job.salario);
       const mediana = MathSalarios.calcMediana(salarios);
       personMedianaNameRes.innerText += `La mediana de ${name} es ${mediana}`;
       return mediana;
-    }
-  }
+    } 
+  };
+  personMedianaNameRes.innerText += `El número ingresado no está en el sistema`;
+      return;
 }
 personMedianaNameBtn.addEventListener("click", () =>
   medianaForPerson(parseInt(personMedianaName.value))
@@ -57,11 +56,8 @@ personMedianaNameBtn.addEventListener("click", () =>
 
 function proyeccionForPerson(ciPerson) {
   for (salario of salarios) {
-    if (salario.ci != ciPerson) {
-      personProyecNameRes.innerText += `El número ingresado no está en el sistema`;
-      return;
-    }
-    const name = findPerson(ciPerson).name;
+    if (salario.ci == ciPerson && salario.trabajos.length > 2) {
+      const name = findPerson(ciPerson).name;
     const jobs = findPerson(ciPerson).trabajos;
     let porcentajeDeCrecimiento = [];
     for (let j = 1; j < jobs.length; j++) {
@@ -80,24 +76,30 @@ function proyeccionForPerson(ciPerson) {
     );
     personProyecNameRes.innerText += `La proyeccion del nuevo salario para ${name} es ${nuevoSalario}`;
     return nuevoSalario;
+    }
   }
-}
+  personProyecNameRes.innerText += `El número ingresado no está en el sistema o no tiene suficientes años de salario`;
+      return;
+};
 personProyecNameBtn.addEventListener("click", () =>
   proyeccionForPerson(parseInt(personProyecName.value))
 );
 //Análisis por empresa
 const empresas = {};
-for (persona of salarios) {
-  for (trabajo of persona.trabajos) {
-    if (!empresas[trabajo.empresa]) {
-      empresas[trabajo.empresa] = {};
+function addEmpresas () {
+  for (persona of salarios) {
+    for (trabajo of persona.trabajos) {
+      if (!empresas[trabajo.empresa]) {
+        empresas[trabajo.empresa] = {};
+      }
+      if (!empresas[trabajo.empresa][trabajo.year]) {
+        empresas[trabajo.empresa][trabajo.year] = [];
+      }
+      empresas[trabajo.empresa][trabajo.year].push(trabajo.salario);
     }
-    if (!empresas[trabajo.empresa][trabajo.year]) {
-      empresas[trabajo.empresa][trabajo.year] = [];
-    }
-    empresas[trabajo.empresa][trabajo.year].push(trabajo.salario);
   }
-}
+};
+addEmpresas();
 
 function medianaForEmpresa(name, year) {
   if (!empresas[name]) {
@@ -121,13 +123,13 @@ medianaEmpresaNameBtn.addEventListener("click", () =>
 );
 
 function proyeccionSalariosPorEmpresa(nombre) {
-  if (!empresas[nombre]) {
-    empresaProyecNameRes.innerText += "La empresa no existe";
+  if ( Object.values(empresas[nombre]).length <= 1 || !empresas[nombre]) {
+    empresaProyecNameRes.innerText += "La empresa no existe o no tiene los salarios suficientes";
     console.warn("La empresa no existe");
   } else {
     const empresaPorYear = Object.keys(empresas[nombre]);
     const medianaPorYear = empresaPorYear.map((year) => {
-      return medianaForEmpresa(nombre, year);
+      return medianaEmpresa(nombre, year);
     });
     let porcentajeDeCrecimiento = [];
     for (let j = 1; j < medianaPorYear.length; j++) {
@@ -219,10 +221,22 @@ function formSubmitted(event) {
       }
     }
   });
+  addEmpresas();
   newPersonCi.value = "";
   newPersonEmpresa.value = "";
   newPersonName.value = "";
   newPersonSalario.value = "";
   newPersonYear.value = "";
   return;
+}
+
+function medianaEmpresa(name, year) {
+  if (!empresas[name]) {
+    medianaEmpresaNameRes.innerText += "La empresa no existe";
+    console.warn("La empresa no existe");
+  } else if (!empresas[name][year]) {
+    console.warn("No hay registro del salario");
+  } else {
+    return MathSalarios.calcMediana(empresas[name][year]);
+  }
 }
