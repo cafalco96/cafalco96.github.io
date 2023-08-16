@@ -47,6 +47,12 @@ const works = [
     name:'Stopwatch !!!',
     description:'Stopwatch app',
   },
+  {
+    url:'./taller-javascript-math/index.html',
+    img:'./moods/public/assets/js.jpg',
+    name:'Mathematics with JS !!',
+    description:'Mathematics with JS',
+  },
 ];
 const worksContainer = document.querySelector(".works-container");
 const addWorks = (() => {
