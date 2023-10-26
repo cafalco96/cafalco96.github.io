@@ -150,6 +150,16 @@ let certificates = [
     name: "Statistics in Js",
     description: "Platzi Statistics in Js",
   },
+  {
+    img: "https://i.ibb.co/M73TZ9L/diploma-javascript-practico-videojuegos.jpg",
+    name: "Video Game with Js",
+    description: "Platzi Video Game with Js",
+  },
+  {
+    img: "https://i.ibb.co/m5bVxYc/diploma-pinia.jpg",
+    name: "Pinia Vue JS",
+    description: "Platzi Pinia Vue Js",
+  },
 ];
 const certificatesContainer = document.querySelector(".certificates-container");
 const addCertificates = (() => {
