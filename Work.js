@@ -53,6 +53,12 @@ const works = [
     name:'Mathematics with JS !!',
     description:'Mathematics with JS',
   },
+  {
+    url:'./js-videogame/index.html',
+    img:'./moods/public/assets/game.png',
+    name:'Walking VideoGame wit JS and Canvas',
+    description:'VideoGame wit JS and Canvas',
+  },
 ];
 const worksContainer = document.querySelector(".works-container");
 const addWorks = (() => {

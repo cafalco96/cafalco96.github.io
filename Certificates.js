@@ -160,6 +160,36 @@ let certificates = [
     name: "Pinia Vue JS",
     description: "Platzi Pinia Vue Js",
   },
+  {
+    img: "https://i.ibb.co/VJ4mMQc/diploma-ecmascript-6.jpg",
+    name: "Ecmascript 6",
+    description: "Platzi Ecmascript 6",
+  },
+  {
+    img: "https://i.ibb.co/rv5gxd8/diploma-reactividad-vuejs.jpg",
+    name: "Reactivity with Vue",
+    description: "Platzi Reactivity with Vue",
+  },
+  {
+    img: "https://i.ibb.co/HtWHx5b/diploma-javascript-poo.jpg",
+    name: "Basic POO",
+    description: "Platzi Basic POO",
+  },
+  {
+    img: "https://i.ibb.co/ZTznDbb/diploma-vue-unit-testing.jpg",
+    name: "Unit Testing with Vue",
+    description: "Platzi Unit Testing with Vue",
+  },
+  {
+    img: "https://i.ibb.co/QjFMSm4/diploma-javascript-poo-intermedio.jpg",
+    name: "Intermediate POO",
+    description: "Platzi Intermediate POO",
+  },
+  {
+    img: "https://i.ibb.co/T1P7dg3/Js.jpg",
+    name: "JS Practical",
+    description: "Sololearn JS Practical",
+  },
 ];
 const certificatesContainer = document.querySelector(".certificates-container");
 const addCertificates = (() => {
