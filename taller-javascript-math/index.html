@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathematics Workshop with JavaScript</title>
+  </head>
+  <body>
+    <h1>Mathematics Workshop with JavaScript</h1>
+    <ul class="enlaces-lista">
+      <li>
+        <a href="./math.html">Basic Formulas</a>
+      </li>
+      <li>
+        <a href="./tienda.html">Percentages and discounts</a>
+      </li>
+      <li>
+        <a href="./salarios.html">Salary Analysis in spanish</a>
+      </li>
+    </ul>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+<style>
+  h1 {
+    text-align: center;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .enlaces-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #005c99;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .enlaces-lista li {
+    margin: 0 10px;
+  }
+
+  .enlaces-lista a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .enlaces-lista a:hover {
+    color: #f0f0f0;
+  }
+
+  @media (max-width: 768px) {
+    .enlaces-lista {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
