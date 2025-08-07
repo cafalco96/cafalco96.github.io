@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+  </head>
+  <body>
+    <h1>How would you know the real price</h1>
+    <form>
+      <label for="price">Price</label>
+      <input
+        id="price"
+        class="price"
+        type="number"
+        placeholder="please enter the price"
+      />
+      <br />
+      <hr />
+      <label for="outlet">Descount</label>
+      <input
+        id="outlet"
+        class="descount"
+        type="number"
+        placeholder="Please enter the discount"
+      />
+      <p class="real-price"></p>
+      <button class="price-calc" type="button">Submit</button>
+    </form>
+
+    <h2>Do you have a ticket ???</h2>
+    <form>
+      <label for="price-ticket">Price</label>
+      <input
+        id="price-ticket"
+        class="price-ticket"
+        type="number"
+        placeholder="please enter the price"
+      />
+      <br />
+      <hr />
+      <label for="outlet-ticket">Ticket</label>
+      <input
+        id="outlet-ticket"
+        class="discount-ticket"
+        type="text"
+        placeholder="Please enter the ticket name"
+      />
+      <p class="real-price-ticket"></p>
+      <button class="price-calc-ticket" type="button">Submit</button>
+    </form>
+    <h2>Do you have a ticket ??? (with Array methods)</h2>
+    <form>
+      <label for="price-ticket-array">Price</label>
+      <input
+        id="price-ticket-array"
+        class="price-ticket-array"
+        type="number"
+        placeholder="please enter the price"
+      />
+      <br />
+      <hr />
+      <label for="outlet-ticket-array">Ticket</label>
+      <input
+        id="outlet-ticket-array"
+        class="discount-ticket-array"
+        type="text"
+        placeholder="Please enter the ticket name"
+      />
+      <p class="real-price-ticket-array"></p>
+      <button class="price-calc-ticket-array" type="button">Submit</button>
+    </form>
+    <script src="./tienda.js"></script>
+  </body>
+</html>
+<style>
+  /* Estilos globales */
+  body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo,
+  .subtitulo {
+    margin-top: 40px;
+    font-size: 28px;
+    color: #005c99;
+  }
+
+  .formulario {
+    width: 280px;
+    display: flex;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .etiqueta {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .price,
+  .descount,
+  .price-ticket,
+  .discount-ticket,
+  .price-ticket-array,
+  .discount-ticket-array {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .price-calc,
+  .price-calc-ticket,
+  .price-calc-ticket-array {
+    background-color: #005c99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .price-calc:hover,
+  .price-calc-ticket:hover,
+  .price-calc-ticket-array:hover {
+    background-color: #005c99;
+  }
+
+  .real-price,
+  .real-price-ticket,
+  .real-price-ticket-array {
+    font-weight: bold;
+    color: green;
+    margin-top: 10px;
+  }
+</style>
