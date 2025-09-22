@@ -326,8 +326,8 @@ const isMenuOpen = ref(false);
   }
 
   &__counter {
-    background-color: vars.$portfolio-counter-bg;
-    color: vars.$portfolio-text-muted;
+    background-color: vars.$portfolio-white-text;
+    color: #000000;
     font-size: 11px;
     font-weight: 500;
     line-height: 1;
