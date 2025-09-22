@@ -1,0 +1,23 @@
+.layout-full-width {
+    width: 100%;
+
+    &__header {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    &__main {
+        max-width: 1600px;
+        margin: 0 auto 0 auto;
+    }
+
+    &__footer {
+        margin-top: 3%;
+        align-items: center;
+        text-align: center;
+    }
+}
+.mt-full {
+    margin-top: 80px;
+  }

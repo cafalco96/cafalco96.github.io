@@ -1,0 +1,29 @@
+@mixin grid($ancho, $espacio) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $espacio;
+    width: $ancho;
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (min-width: 950px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+%main-titles {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: $colorwhite;
+}
+
+%images {
+    width: 300px;
+    margin-top: 10px;
+    position: fix;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
