@@ -1,0 +1,19 @@
+@use "../variables/sass-variables" as variables;
+
+.btn {
+  display: block;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  padding: 10px;
+  text-align: center;
+  color: variables.$portfolio-white-text;
+  border: 1px solid variables.$portfolio-border;
+  border-radius: variables.$portfolio-border-radius;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  opacity: 0.75;
+  &:hover {
+    opacity: 1;
+  }
+}

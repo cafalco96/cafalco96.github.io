@@ -1,0 +1,31 @@
+@use "../variables/_sass-variables" as v;
+
+@mixin sm {
+  @media screen and (min-width: v.$project-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: v.$project-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: v.$project-lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: v.$project-xl) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (min-width: v.$project-xxl) {
+    @content;
+  }
+}
